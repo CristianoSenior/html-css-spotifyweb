@@ -1,0 +1,187 @@
+/* regole generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.clearfix{
+  height: calc(100vh - 100px);
+
+}
+
+/* BARRA VERTICALE SINISTRA */
+.barrasinistra{
+  height: calc(100vh - 100px);
+  width: 200px;
+  background-color: purple;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+
+}
+
+.logogrande{
+  width: 50%;
+  margin: 0 25%;
+}
+.color{
+  color: white;
+  font-weight: bold;
+  padding-bottom: 5px;
+
+}
+
+/* regole icone */
+.homesymb{
+  width: 20px;
+  vertical-align: middle;
+}
+/* titolo playlist */
+.playlisttitle{
+  font-size: 20px;
+  font-weight:bold;
+  color: white;
+  margin: 10px 0;
+}
+.distanzaplaylist p{
+  line-height: 50px;
+  color: white;
+
+}
+.distanzaplaylist{
+  overflow: scroll;
+}
+
+/* distanza playlist parte sottostante */
+.spacetop{
+  margin-top: 50px;
+  border-bottom: 2px solid white;
+
+}
+/* PARTE DESTRA */
+.partedestra{
+  height: calc(100vh - 100px);
+  background-color:yellow;
+  width: calc(100% - 200px);
+  float: left;
+  overflow: scroll;
+  }
+
+.barrafissa{
+  height: 100px;
+  width: calc(100vw - 200px);
+  /* top: 0;
+  right:0; */
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  justify-content:flex-end;
+}
+.misurebottbarra{
+  min-width: 20px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 35px 20px 35px 0;
+  border: 1px solid white;
+  border-radius: 200px;
+  text-decoration: none;
+  color: white;
+  padding-top: 12px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+.spacetotrasparent{
+  margin-top: 120px;
+  margin-bottom: 30px ;
+  padding-left: 10px;
+  color: white;
+  font-weight: bold;
+
+}
+.contbrani1{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.contbrani1 h5 {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding-left: 10px;
+}
+.contbrani1 h6 {
+  text-align: center;
+  font-weight: bold;
+  color: #ccc;
+  }
+
+.ciaociao{
+  width: 15%;
+  height: auto;
+}
+.ciaociao img{
+  width: 100%;
+  padding-left: 10px;
+}
+.contbrani2{
+  width: 100%;
+  display: flex;
+  text-align: center;
+
+}
+/* .ciaociao img{
+  width: 15%;
+  height: 100%;
+} */
+/* .contbrani1 img{
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+} */
+
+
+
+/* FOOTER */
+.barramusica{
+  background-color: blue;
+  height: 100px;
+  width: 100%;
+
+}
+/* Fine footer */
+.spacetop i{
+  font-size: 30px;
+}
+.ciao i {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.contbrani3{
+  width: 100%;
+  display: flex;
+}
+
+.byebye{
+  width: 15%;
+  height: auto;
+  text-align: center;
+}
+.byebye img{
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 100%;
+}
