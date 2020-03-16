@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .clearfix::after{
@@ -20,7 +21,7 @@
 .barrasinistra{
   height: calc(100vh - 100px);
   width: 200px;
-  background-color: purple;
+  background-color: black;
   float: left;
   display: flex;
   flex-direction: column;
@@ -41,8 +42,26 @@
 
 /* regole icone */
 .homesymb{
-  width: 20px;
+  width: 30px;
   vertical-align: middle;
+}
+
+.ciao span{
+  color:white;
+}
+.distanzaplaylist p{
+  line-height: 50px;
+  color: white;
+
+}
+.distanzaplaylist{
+  overflow-y: auto;
+}
+
+
+.riduzioneuomo img{
+  width: 20px;
+  margin-top: 10px;
 }
 /* titolo playlist */
 .playlisttitle{
@@ -51,28 +70,18 @@
   color: white;
   margin: 10px 0;
 }
-.distanzaplaylist p{
-  line-height: 50px;
-  color: white;
 
-}
-.distanzaplaylist{
-  overflow: scroll;
-}
 
-/* distanza playlist parte sottostante */
-.spacetop{
-  margin-top: 50px;
-  border-bottom: 2px solid white;
 
-}
+
+
 /* PARTE DESTRA */
 .partedestra{
   height: calc(100vh - 100px);
-  background-color:yellow;
+  background-color:rgb(8, 11, 27);
   width: calc(100% - 200px);
   float: left;
-  overflow: scroll;
+  overflow-y: auto;
   }
 
 .barrafissa{
@@ -84,6 +93,7 @@
   position: fixed;
   display: flex;
   justify-content:flex-end;
+  z-index: 999;
 }
 .misurebottbarra{
   min-width: 20px;
@@ -100,12 +110,14 @@
   padding-bottom: 30px;
 }
 .spacetotrasparent{
-  margin-top: 120px;
+  margin-top: 130px;
   margin-bottom: 30px ;
   padding-left: 10px;
   color: white;
   font-weight: bold;
-
+}
+.spacetotrasparent:hover{
+  color: red;
 }
 .contbrani1{
   width: 100%;
@@ -128,44 +140,120 @@
   }
 
 .ciaociao{
-  width: 15%;
+  flex-basis: calc(100%/6);
   height: auto;
+  position: relative;
+
 }
 .ciaociao img{
+
   width: 100%;
   padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+
+/* distanza playlist parte sottostante */
+.spacetop{
+  margin-top: 50px;
+  border-bottom: 2px solid white;
+}
+.spacetop i {
+  color: white;
+  font-size: 20px;
+
+
+}
+.spacetop span{
+  color: white;
+  margin-left: 10px;
+}
+.riduzioneuomo span{
+  color: white;
+}
+.creatoperseniorv{
+  margin-top: 20px;
+  margin-bottom: 30px ;
+  padding-left: 10px;
+  color: white;
+  font-weight: bold;
+
 }
 .contbrani2{
   width: 100%;
   display: flex;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
 
 }
-/* .ciaociao img{
-  width: 15%;
-  height: 100%;
-} */
-/* .contbrani1 img{
-  padding-left: 10px;
-  margin-top: 10px;
-  margin-left: 20px;
-} */
-
-
 
 /* FOOTER */
 .barramusica{
   background-color: blue;
   height: 100px;
   width: 100%;
+  display: flex;
+}
+
+.left{
+  width: 20%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.left img{
+  width: 20%;
+  height: 40%;
+  margin: 0 10px;
+}
+
+.left a{
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 15px;
+  color: white;
+}
+
+.left i{
+  color: #ccc;
+  margin-left: 7px;
+  margin-top: 12px;
+
+
+}
+
+.middle{
+  width:60%;
+  height: 100%;
+  background-color: black;
+}
+.up{
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .up i{
+    padding: 0 10px;
+    color: white;
+  }
+.right{
+  width: 20%;
+  height: 100%;
+  background-color: black;
+  color: white
 
 }
 /* Fine footer */
-.spacetop i{
-  font-size: 30px;
-}
+
 .ciao i {
-  font-size: 40px;
+  font-size: 20px;
   color: white;
   font-weight: bold;
 }
@@ -173,15 +261,127 @@
 .contbrani3{
   width: 100%;
   display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .byebye{
   width: 15%;
   height: auto;
   text-align: center;
+  color: white;
 }
 .byebye img{
   width: 100%;
-  padding-left: 10px;
+  padding: 10px;
   border-radius: 100%;
+}
+
+.flessionedisplay{
+  display: flex;
+  align-items: center;
+}
+
+.down{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+/* width: auto;
+display: flex;
+justify-content: center;
+align-items: center; */
+
+}
+.barralunga{
+  width:60%;
+  height: 4px;
+
+  border-radius: 3px;
+  background-color: #535353;
+  margin-top:21px;
+  /* width: 60%;
+    height: 4px;
+
+    border-radius: 3px;
+    background-color: black; */
+}
+
+.barracorta{
+  width: 40%;
+  height: 4px;
+  border-radius: 3px;
+  background-color: white;
+  /* padding-top: 5px; */
+  padding-left: 2px;
+}
+
+.right{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.barralungaright{
+  width: 60%;
+  height: 4px;
+  background-color: #535353;
+  border-radius: 3px;
+
+
+}
+time{
+  color: white;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 12px
+}
+
+.barracortaright{
+  width: 20%;
+  height: 4px;
+  background-color: white;
+  border-radius: 3px;
+
+}
+
+
+.porcamerda:hover .overlay{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(16, 23, 27, 0.78);
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 0;
+  font-size: 50px;
+}
+
+.porcamerda{
+  position: relative;
+  cursor: pointer;
+}
+.overlay{
+  display: none;
+
+}
+.right i{
+  margin: 0 6px;
+  transform: translate(-50% -50%);
+}
+@media all and (max-width:780px){
+  .barrasinistra{
+    height: calc(100vh - 100px);
+    width: 80px;
+    background-color: black;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+
+  }
 }
